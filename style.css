@@ -1,32 +1,27 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+/*styling for skills page*/
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    width: 100px; 
+    height: 100px; 
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.5;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+.circle {
+    fill: none;
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
 }
+/*styling for skills page*/
